@@ -54,7 +54,7 @@ const ProjectDescription: React.FC = () => {
       </div>
       {/* Button */}
       <div className="flex flex-row w-min gap-4 items-center rounded">
-        <Link href={"https://github.com/Peakied-org"}>
+        <Link href={"https://github.com/stormnoopper/GO_Bot"}>
             <div className="bg-slate-300 px-5 py-2 my-5 font-semibold shadow-inherit h-min text-xl rounded-md">Github</div>
         </Link>
       </div>
