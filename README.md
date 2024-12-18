@@ -13,4 +13,4 @@ This project is created to serve as a portfolio showcasing some aspects of my wo
 
 ## Live
 
-https://online-portfolio-six.vercel.app/
+[https://online-portfolio-six.vercel.app/](https://online-portfolio-ea1gg6zy4-stormnooppers-projects.vercel.app)
