@@ -1,11 +1,7 @@
-import Image from "next/image";
-
 export default function HomePage() {
     return (
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-28 my-16 md:my-48 px-4">
-            <Image
-                width={1000}
-                height={1000}
+            <img
                 src="/pic/mainpic.png"
                 alt="Main Picture"
                 className="rounded-full w-3/4 md:w-1/4"
