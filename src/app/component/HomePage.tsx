@@ -1,9 +1,13 @@
+import Image from "next/image";
+
 export default function HomePage() {
     return (
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-28 my-16 md:my-48 px-4">
-            <img
-                src="/pic/mainpic.png"
-                alt="Main Picture"
+            <Image
+                width={1000}
+                height={1000}
+                src="/pic/mainPic.png"
+                alt="MainPicture"
                 className="rounded-full w-3/4 md:w-1/4"
             />
             <div className="w-full md:w-auto flex flex-col gap-4 md:gap-3 text-center md:text-left">
