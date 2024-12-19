@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function ProjectShow({ imgSrc, title, projectLink }: { imgSrc: string; title: string; projectLink: string }) {
     return (
         <a
@@ -6,7 +7,12 @@ export default function ProjectShow({ imgSrc, title, projectLink }: { imgSrc: st
             transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg overflow-hidden"
         >
             <div className="w-full h-full bg-white rounded-lg flex items-center justify-center">
-                <img src={imgSrc} alt={title} className="w-3/4 rounded-xl mb-4" />
+                <Image 
+                    height={1000}
+                    width={1000}
+                    src={imgSrc}
+                    alt={title}
+                    className="w-3/4 rounded-xl mb-4" />
             </div>
             <div className="font-semibold text-lg sm:text-xl md:text-2xl text-center">{title}</div>
         </a>
