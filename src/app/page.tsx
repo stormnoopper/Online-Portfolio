@@ -9,11 +9,6 @@ import Project from "./component/Project";
 import Contact from "./component/Contact";
 import CompetitiveAcademic from "./component/CompetitiveAcademic";
 
-// Dynamically import the ResumeSection
-const ResumeSection = dynamic(() => import("./resume/page"), {
-  ssr: false, // Disable server-side rendering
-});
-
 const Home: React.FC = () => {
   return (
     <main className="bg-gray-50 min-h-screen">
@@ -47,9 +42,6 @@ const Home: React.FC = () => {
         <section id="contact" className="w-full max-w-7xl">
           <Contact />
         </section>
-
-        {/* Resume Section */}
-        <ResumeSection />
       </div>
     </main>
   );

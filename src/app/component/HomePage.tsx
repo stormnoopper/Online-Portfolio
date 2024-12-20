@@ -18,7 +18,7 @@ export default function HomePage() {
                     Full-Stack Developer
                 </div>
                 <div className="flex flex-row justify-center md:justify-start gap-4 items-center rounded">
-                    <a href="/resume" target="_blank" rel="noopener noreferrer" className="bg-slate-300 px-6 py-3 md:px-8 md:py-3 font-semibold shadow-inherit text-lg md:text-xl rounded-md">
+                    <a href="https://pdfupload.io/docs/319aac09" target="_blank" rel="noopener noreferrer" className="bg-slate-300 px-6 py-3 md:px-8 md:py-3 font-semibold shadow-inherit text-lg md:text-xl rounded-md">
                         RESUME
                     </a>
                 </div>
