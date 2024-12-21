@@ -13,4 +13,4 @@ This project is created to serve as a portfolio showcasing some aspects of my wo
 
 ## Live
 
-https://online-portfolio-4c2f.onrender.com
+https://online-portfolio.fly.dev/
