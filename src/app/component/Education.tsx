@@ -17,7 +17,7 @@ export default function Education() {
 
                 <div>
                     <div className="font-semibold text-lg md:text-2xl ml-2 md:ml-5">
-                        &#x2022; Chulalongkorn University
+                        &#x2022; Chulalongkorn University (Year 3)
                     </div>
                     <div className="text-sm md:text-lg ml-4 md:ml-10">
                         Bachelor of Engineering Program in Computer Engineering and Digital Technology

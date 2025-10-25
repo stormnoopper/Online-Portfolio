@@ -8,6 +8,7 @@ import Experience from "./component/Experience";
 import Project from "./component/Project";
 import Contact from "./component/Contact";
 import CompetitiveAcademic from "./component/CompetitiveAcademic";
+import JumpButton from "./component/JumpButton";
 
 const Home: React.FC = () => {
   return (
@@ -43,6 +44,9 @@ const Home: React.FC = () => {
           <Contact />
         </section>
       </div>
+      
+      {/* Jump Button */}
+      <JumpButton />
     </main>
   );
 };
