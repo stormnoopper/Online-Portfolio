@@ -3,6 +3,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import HomePage from "@/app/component/HomePage";
+import Skills from "./component/Skills";
 import Education from "./component/Education";
 import Experience from "./component/Experience";
 import Project from "./component/Project";
@@ -22,6 +23,11 @@ const Home: React.FC = () => {
         {/* Education Section */}
         <section id="education" className="w-full max-w-7xl">
           <Education />
+        </section>
+
+        {/* Skills Section */}
+        <section id="skills" className="w-full max-w-7xl">
+          <Skills />
         </section>
 
         {/* Experience Section */}

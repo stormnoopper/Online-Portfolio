@@ -11,6 +11,7 @@ const JumpButton: React.FC = () => {
   const sections = useMemo(() => [
     "home",
     "education", 
+    "skills",
     "experience",
     "competitive-academic",
     "project",
