@@ -18,11 +18,11 @@ export default function HomePage() {
                 <div className="text-lg md:text-xl font-semibold">
                     Software Tester | Product Owner | Full-Stack Developer
                 </div>
-                <div className="flex flex-row justify-center md:justify-start gap-4 items-center rounded">
+                {/* <div className="flex flex-row justify-center md:justify-start gap-4 items-center rounded">
                     <a href="/api/resume" target="_blank" rel="noopener noreferrer" className="bg-slate-300 px-6 py-3 md:px-8 md:py-3 font-semibold shadow-inherit text-lg md:text-xl rounded-md">
                         RESUME
                     </a>
-                </div>
+                </div> */}
             </div>
         </div>
     );
