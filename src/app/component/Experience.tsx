@@ -16,28 +16,49 @@ export default function Experience() {
                     </div>
                     <div className="ml-6 md:ml-12 space-y-2">
                         <div className="text-sm md:text-base">
-                            • Training work project website using Next.js with Golang and Java Spring Boot backend
+                            • Collaborated on high-scale web application development using Next.js, and Java Spring Boot
                         </div>
                         <div className="text-sm md:text-base">
-                            • Use Apache Kafka to support real-time data processing in mini project
+                            • Developed and executed test cases and test plans for web applications, documented bugs, and verified fixes before deployment.
                         </div>
                     </div>
                 </div>
 
                 {/* Second Experience */}
-                <div>
+                <div className="mb-8">
                     <div className="font-semibold text-lg md:text-2xl ml-2 md:ml-5">
-                        &#x2022; Smart Shift Solutions (Intern) - Full-stack developer
+                        &#x2022; Smart Shift Solutions (Intern & Freelance) - Full-stack Developer
                     </div>
                     <div className="text-sm md:text-lg ml-4 md:ml-10 mb-3">
-                        May 2025 - July 2025
+                        May 2025 - April 2026
                     </div>
                     <div className="ml-6 md:ml-12 space-y-2">
                         <div className="text-sm md:text-base">
-                            • Collaborated in developing a CRM system for an external organization
+                            • Researched AI/Automation solutions to improve product features and system optimization.
                         </div>
                         <div className="text-sm md:text-base">
-                            • Built the frontend with Next.js and the backend using Kotlin Spring Boot
+                            • Developed an end-to-end CRM system using Next.js and Kotlin Spring Boot to improve client workflow efficiency.
+                        </div>
+                    </div>
+                </div>
+
+                {/* Third Experience */}
+                <div>
+                    <div className="font-semibold text-lg md:text-2xl ml-2 md:ml-5">
+                        &#x2022; Ayodia Co.,LTD (Intern) - Software Tester
+                    </div>
+                    <div className="text-sm md:text-lg ml-4 md:ml-10 mb-3">
+                        May 2026 - July 2026
+                    </div>
+                    <div className="ml-6 md:ml-12 space-y-2">
+                        <div className="text-sm md:text-base">
+                            • Executed manual functional, regression, and integration tests for web applications.
+                        </div>
+                        <div className="text-sm md:text-base">
+                            • Tracked defects, verified fixes, and collaborated with developers to ensure product quality.
+                        </div>
+                        <div className="text-sm md:text-base">
+                            • Performed API testing and maintained QA documentation.
                         </div>
                     </div>
                 </div>

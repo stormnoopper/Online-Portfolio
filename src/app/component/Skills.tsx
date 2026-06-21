@@ -1,24 +1,32 @@
 export default function Skills() {
     const skillCategories = [
         {
-            title: "Web development",
-            items: ["Python", "React", "Next.js", "Node.js", "Express.js", "Spring Boot [Kotlin]"],
+            title: "Testing",
+            items: ["Manual Testing", "Test Case Design", "Test Planning", "Functional Testing", "Integration Testing", "Regression Testing", "API Testing", "Performance Testing", "Bug Tracking"],
         },
         {
-            title: "UX/UI design",
-            items: ["Figma"],
+            title: "Automation & Tools",
+            items: ["Playwright", "k6", "Robot Framework", "Jira/Trello", "Postman", "GitHub", "GitLab", "Docker", "SQL"],
         },
         {
-            title: "IOT/Microcontroller",
-            items: ["Arduino", "Esp32", "Raspberry Pi", "Sensors", "IoT Dashboard", "Streamlit", "MQTT"],
+            title: "Programming",
+            items: ["Java", "Spring Boot", "Next.js", "Golang", "Python", "Kotlin"],
         },
         {
-            title: "Tools",
-            items: ["Github", "Docker", "Canva", "Tinkercad", "Fusion"],
+            title: "QA Processes",
+            items: ["Agile/Scrum", "SDLC", "STLC", "Defect Life Cycle", "Test Documentation"],
+        },
+        {
+            title: "UX/UI Design",
+            items: ["Figma", "Canva"],
         },
         {
             title: "Database",
             items: ["Supabase", "MongoDB", "PostgreSQL"],
+        },
+        {
+            title: "IOT / Microcontroller",
+            items: ["Arduino", "Esp32", "Raspberry Pi", "Sensors", "IoT Dashboard", "Streamlit", "MQTT"],
         },
     ];
 

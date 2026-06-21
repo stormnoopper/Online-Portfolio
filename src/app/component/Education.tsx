@@ -11,16 +11,22 @@ export default function Education() {
                         &#x2022; Princess Chulabhorn Science High School Phitsanulok
                     </div>
                     <div className="text-sm md:text-lg ml-4 md:ml-10">
-                        Math-Sci High School
+                        Sciences and Mathematics Program
+                    </div>
+                    <div className="text-sm md:text-base ml-4 md:ml-10 text-gray-600">
+                        May 2017 – Mar 2023 &nbsp;|&nbsp; GPAX: 3.58
                     </div>
                 </div>
 
                 <div>
                     <div className="font-semibold text-lg md:text-2xl ml-2 md:ml-5">
-                        &#x2022; Chulalongkorn University (Year 3)
+                        &#x2022; Chulalongkorn University
                     </div>
                     <div className="text-sm md:text-lg ml-4 md:ml-10">
-                        Bachelor of Engineering Program in Computer Engineering and Digital Technology
+                        B.Eng. in Computer Engineering and Digital Technology (CEDT)
+                    </div>
+                    <div className="text-sm md:text-base ml-4 md:ml-10 text-gray-600">
+                        Aug 2023 – Expected 2026 &nbsp;|&nbsp; GPAX: 3.15
                     </div>
                 </div>
             </div>
