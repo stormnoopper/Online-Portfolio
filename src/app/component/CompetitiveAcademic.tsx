@@ -19,7 +19,7 @@ export default function CompetitiveAcademic() {
                     &#x2022; Microsoft AI for Accessibility Hackathon 2024 (Finalist — Last 10 Teams)
                 </div>
                 <div className="text-sm md:text-lg ml-4 md:ml-10 mb-1">
-                    Designed and validated "New Vision" glasses for the blind, focusing on user requirements, functional reliability, accessibility testing, and user-centered design.
+                    Designed and validated &quot;New Vision&quot; glasses for the blind, focusing on user requirements, functional reliability, accessibility testing, and user-centered design.
                 </div>
 
                 {/* Tesa */}
