@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import dynamic from "next/dynamic";
 import HomePage from "@/app/component/HomePage";
 import Skills from "./component/Skills";
 import Education from "./component/Education";
