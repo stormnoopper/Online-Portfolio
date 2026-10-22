@@ -9,7 +9,11 @@ export type ExperienceItem = {
 
 export type AchievementItem = { title: string; description: string };
 
-export const title = "QA Engineer | Full-stack Developer | Frontend Developer";
+export type EducationItem = { school: string; program: string; period: string; gpax: string };
+
+export type ProjectItem = { imgSrc: string; title: string; projectLink: string };
+
+export const title = "QA Engineer | Full-stack Developer";
 
 export const summary =
     "Computer Engineering student with hands-on experience in both quality assurance and web development. Proficient in manual, automated, API, and performance testing, and in building end-to-end web applications with Next.js, React, and Spring Boot (Java/Kotlin). Combines a developer's understanding of how systems are built with a tester's attention to edge cases, accessibility, and reliability — delivering software that is well-tested, maintainable, and user-friendly.";
@@ -59,14 +63,7 @@ export const experience: ExperienceItem[] = [
 ];
 
 export const skills: SkillCategory[] = [
-    {
-        title: "Testing",
         items: ["Manual Testing", "Test Case Design", "Test Planning", "Functional Testing", "Integration Testing", "Regression Testing", "API Testing", "Performance Testing", "Cross-browser Testing", "Accessibility Testing", "Bug Tracking"],
-    },
-    {
-        title: "Automation & Testing Tools",
-        items: ["Playwright (E2E)", "k6", "Robot Framework", "Postman", "Jira/Trello"],
-    },
     {
         title: "Frontend",
         items: ["Next.js", "React", "JavaScript", "HTML", "CSS", "Responsive Layouts", "Component-based UI"],
@@ -78,6 +75,18 @@ export const skills: SkillCategory[] = [
     {
         title: "Database & Infrastructure",
         items: ["SQL", "PostgreSQL", "MongoDB", "Supabase", "Docker", "Git", "GitHub", "GitLab"],
+    },
+    {
+        title: "Testing",
+        items: ["Manual Testing", "Test Case Design", "Test Planning", "Functional Testing", "Integration Testing", "Regression Testing", "API Testing", "Performance Testing", "Cross-browser Testing", "Accessibility Testing", "Bug Tracking"],
+    },
+    {
+        title: "Automation & Testing Tools",
+        items: ["Playwright (E2E)", "k6", "Robot Framework", "Postman", "Jira/Trello"],
+    },
+    {
+        title: "AI",
+        items: ["Claude Code", "Prompt Engineering", "AI-assisted Test Design & Automation", "MCP (Model Context Protocol)", "Custom AI Agent Skills"],
     },
     {
         title: "Process",
@@ -115,4 +124,29 @@ export const achievements: AchievementItem[] = [
         title: "UNIHACK 2023 (Participant)",
         description: "Hackathon to Solve Community Problems, Designed a Community Waste Management System",
     },
+];
+
+export const education: EducationItem[] = [
+    {
+        school: "Chulalongkorn University",
+        program: "B.Eng. in Computer Engineering and Digital Technology (CEDT)",
+        period: "Aug 2023 – Expected 2026",
+        gpax: "3.15",
+    },
+    {
+        school: "Princess Chulabhorn Science High School Phitsanulok",
+        program: "Sciences and Mathematics Program",
+        period: "May 2017 – Mar 2023",
+        gpax: "3.58",
+    },
+];
+
+export const projects: ProjectItem[] = [
+    { imgSrc: "/pic/project1_1.png", title: "AppSome", projectLink: "/Project1" },
+    { imgSrc: "/pic/project2_1.png", title: "Shopdee", projectLink: "/Project2" },
+    { imgSrc: "/pic/project3_1.png", title: "Discord Gemini bot", projectLink: "/Project3" },
+    { imgSrc: "/pic/project4_1.png", title: "BPF-Best Promotion for fund", projectLink: "/Project4" },
+    { imgSrc: "/pic/project5_1.png", title: "Electronic large gong circle", projectLink: "/Project5" },
+    { imgSrc: "/pic/project6_1.png", title: "Online Learning Assistant", projectLink: "/Project6" },
+    { imgSrc: "/pic/project7_1.png", title: "Periodic Table Hunt", projectLink: "/Project7" },
 ];

@@ -1,25 +1,23 @@
 import { skills } from "@/app/data/profile";
 
 export default function Skills() {
-
     return (
-        <div className="border border-black mt-12 w-11/12 md:w-10/12 mx-auto rounded-md">
-            <div className="p-6 md:mx-12 md:my-10">
-                <div className="font-bold text-2xl md:text-4xl mb-5 text-center md:text-left">
-                    Skills
+        <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
+            {skills.map((category) => (
+                <div key={category.title}>
+                    <h3 className="font-semibold text-zinc-900">{category.title}</h3>
+                    <ul className="mt-3 flex flex-wrap gap-2">
+                        {category.items.map((item) => (
+                            <li
+                                key={item}
+                                className="rounded-md border border-zinc-200 bg-white px-2.5 py-1 text-sm text-zinc-700"
+                            >
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
-
-                {skills.map((category) => (
-                    <div key={category.title} className="mb-6 last:mb-0">
-                        <div className="font-semibold text-lg md:text-2xl ml-2 md:ml-5">
-                            &#x2022; {category.title}
-                        </div>
-                        <div className="text-sm md:text-lg ml-4 md:ml-10">
-                            {category.items.join(", ")}
-                        </div>
-                    </div>
-                ))}
-            </div>
+            ))}
         </div>
     );
 }

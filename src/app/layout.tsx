@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Saroot Areerattanawetch | Portfolio",
-  description: "Portfolio of Saroot Areerattanawetch — QA Engineer, Full-stack Developer, and Frontend Developer.",
+  description: "Portfolio of Saroot Areerattanawetch — QA Engineer and Full-stack Developer.",
 };
 
 export default function RootLayout({
@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${font.className} antialiased`}>{children}</body>
     </html>
   );
 }

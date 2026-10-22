@@ -1,59 +1,43 @@
-"use client";
-
-import React from "react";
-import HomePage from "@/app/component/HomePage";
-import Skills from "./component/Skills";
-import Education from "./component/Education";
+import HomePage from "./component/HomePage";
+import Navbar from "./component/Navbar";
+import Section from "./component/Section";
 import Experience from "./component/Experience";
-import Project from "./component/Project";
-import Contact from "./component/Contact";
+import Skills from "./component/Skills";
 import CompetitiveAcademic from "./component/CompetitiveAcademic";
-import JumpButton from "./component/JumpButton";
+import Project from "./component/Project";
+import Education from "./component/Education";
+import Contact from "./component/Contact";
 
-const Home: React.FC = () => {
-  return (
-    <main className="bg-gray-50 min-h-screen">
-      <div className="flex flex-col justify-center items-center gap-12 px-4 py-8">
-        {/* HomePage Section */}
-        <section id="home" className="w-full max-w-7xl">
-          <HomePage />
-        </section>
-
-        {/* Education Section */}
-        <section id="education" className="w-full max-w-7xl">
-          <Education />
-        </section>
-
-        {/* Skills Section */}
-        <section id="skills" className="w-full max-w-7xl">
-          <Skills />
-        </section>
-
-        {/* Experience Section */}
-        <section id="experience" className="w-full max-w-7xl">
-          <Experience />
-        </section>
-
-        {/* Competitive Academic Section */}
-        <section id="competitive-academic" className="w-full max-w-7xl">
-          <CompetitiveAcademic />
-        </section>
-
-        {/* Project Section */}
-        <section id="project" className="w-full max-w-7xl">
-          <Project />
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="w-full max-w-7xl">
-          <Contact />
-        </section>
-      </div>
-      
-      {/* Jump Button */}
-      <JumpButton />
-    </main>
-  );
-};
-
-export default Home;
+export default function Home() {
+    return (
+        <div className="min-h-screen bg-zinc-50 text-zinc-900">
+            <Navbar />
+            <main className="mx-auto max-w-5xl px-5 sm:px-8">
+                <section id="home">
+                    <HomePage />
+                </section>
+                <Section id="experience" title="Experience">
+                    <Experience />
+                </Section>
+                <Section id="skills" title="Skills">
+                    <Skills />
+                </Section>
+                <Section id="achievements" title="Achievements">
+                    <CompetitiveAcademic />
+                </Section>
+                <Section id="project" title="Projects">
+                    <Project />
+                </Section>
+                <Section id="education" title="Education">
+                    <Education />
+                </Section>
+                <Section id="contact" title="Contact">
+                    <Contact />
+                </Section>
+            </main>
+            <footer className="mx-auto max-w-5xl border-t border-zinc-200 px-5 py-8 text-sm text-zinc-500 sm:px-8">
+                © {new Date().getFullYear()} Saroot Areerattanawetch
+            </footer>
+        </div>
+    );
+}

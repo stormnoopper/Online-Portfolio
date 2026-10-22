@@ -1,32 +1,22 @@
 import { experience } from "@/app/data/profile";
 
 export default function Experience() {
-
     return (
-        <div className="border border-black mt-12 w-11/12 md:w-10/12 mx-auto rounded-md">
-            <div className="p-6 md:mx-12 md:my-10">
-                <div className="font-bold text-2xl md:text-4xl mb-5 text-center md:text-left">
-                    Experience
-                </div>
-
-                {experience.map((item) => (
-                    <div key={item.company} className="mb-8 last:mb-0">
-                        <div className="font-semibold text-lg md:text-2xl ml-2 md:ml-5">
-                            &#x2022; {item.company} - {item.position}
-                        </div>
-                        <div className="text-sm md:text-lg ml-4 md:ml-10 mb-3">
-                            {item.period}
-                        </div>
-                        <div className="ml-6 md:ml-12 space-y-2">
-                            {item.bullets.map((bullet) => (
-                                <div key={bullet} className="text-sm md:text-base">
-                                    • {bullet}
-                                </div>
-                            ))}
-                        </div>
+        <div className="space-y-12">
+            {experience.map((item) => (
+                <div key={item.company}>
+                    <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+                        <h3 className="text-lg font-semibold text-zinc-900">{item.position}</h3>
+                        <span className="shrink-0 text-sm tabular-nums text-zinc-500">{item.period}</span>
                     </div>
-                ))}
-            </div>
+                    <div className="mt-0.5 text-zinc-600">{item.company}</div>
+                    <ul className="mt-4 list-disc space-y-2 pl-5 leading-relaxed text-zinc-700 marker:text-zinc-400">
+                        {item.bullets.map((bullet) => (
+                            <li key={bullet}>{bullet}</li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
         </div>
     );
 }

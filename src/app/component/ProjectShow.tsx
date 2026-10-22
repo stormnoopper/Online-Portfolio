@@ -1,20 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
+
 export default function ProjectShow({ imgSrc, title, projectLink }: { imgSrc: string; title: string; projectLink: string }) {
     return (
-        <a
-            href={projectLink}
-            className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mx-2 sm:mx-3 lg:mx-5 flex flex-col py-5 items-center
-            transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg overflow-hidden"
-        >
-            <div className="w-full h-full bg-white rounded-lg flex items-center justify-center">
-                <Image 
-                    height={1000}
-                    width={1000}
+        <Link href={projectLink} className="group block">
+            <div className="relative aspect-square overflow-hidden rounded-xl border border-zinc-200 bg-zinc-100">
+                <Image
                     src={imgSrc}
                     alt={title}
-                    className="w-3/4 rounded-xl mb-4" />
+                    fill
+                    sizes="(min-width: 1024px) 240px, (min-width: 640px) 30vw, 45vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                />
             </div>
-            <div className="font-semibold text-lg sm:text-xl md:text-2xl text-center">{title}</div>
-        </a>
+            <div className="mt-3 text-sm font-medium text-zinc-900 group-hover:text-teal-700 md:text-base">
+                {title}
+            </div>
+        </Link>
     );
 }
