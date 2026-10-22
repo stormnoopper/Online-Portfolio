@@ -63,7 +63,6 @@ export const experience: ExperienceItem[] = [
 ];
 
 export const skills: SkillCategory[] = [
-        items: ["Manual Testing", "Test Case Design", "Test Planning", "Functional Testing", "Integration Testing", "Regression Testing", "API Testing", "Performance Testing", "Cross-browser Testing", "Accessibility Testing", "Bug Tracking"],
     {
         title: "Frontend",
         items: ["Next.js", "React", "JavaScript", "HTML", "CSS", "Responsive Layouts", "Component-based UI"],
